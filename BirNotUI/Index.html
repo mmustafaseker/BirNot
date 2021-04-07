@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script src="Scripts/jquery-3.6.0.min.js"></script>
+    <script>
+        $.ajax({
+            type: "get",
+            url: "https://localhost:44319/api/Values",
+            headers: {
+                Authorization: "Bearer bu5q5DfP_Z-9iEYohNUOouP5YAzs-EzgbeBoGp5NB-deFK20kaPuiZhXAgCtltJV_yAJhA-qrWjyN3Q2HJOUbVF3SSbEhqshpccsBFS-3eF82679Du8t0l3oiJgXIJhAxhCWMn25uDnbbKD8i1hvlLP-tQkE8eYmZU7dS4rHABnxbPJMHhNyRiQA5QpiRExGpHAn0jjVT-eCj1AHeUqyeGaelTxICMWxUZXIwKMXsuyNrk0jz8jM-KyFM5G6MKoaUOFT_qdcBdURYns6RUcKvA6T9q4qU2ABDuE-18sc9M1GHCIb0jM19YPfOLDeO_gkME5-nvE5oFqm2t2QLnCC7lXydyYBfhQMx9QZ3FiSSAKjoGoWqA-vW1wb6ys-9DllX4B60Q4ryGCP3w61Z5xUzV-u23G-8bWPOBeKdz_KbxOaBvmTh_cYeWipeRlPhbwQd0YNtbSINQGtYxTtoLWAI9JBKhGpHU9b2NdhJco5mf2ak0aW_PtqcJgR6ry_37ju"
+            },
+            success: function (data) {
+                alert(data[0] + " ve " + data[1]);
+            }
+        });
+    </script>
+</body>
+</html>
