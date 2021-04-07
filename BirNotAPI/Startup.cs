@@ -13,7 +13,6 @@ namespace BirNotAPI
     {
         public void Configuration(IAppBuilder app)
         {
-
             app.UseCors(CorsOptions.AllowAll);
             ConfigureAuth(app);
         }
