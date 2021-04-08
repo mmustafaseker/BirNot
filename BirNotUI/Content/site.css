@@ -4,7 +4,7 @@ body {
     background-color: #f5f5f5;
 }
 
-#uyelikSayfası {
+#uyelikSayfa {
     height: 100%;
     display: -ms-flexbox;
     display: flex;
@@ -58,7 +58,7 @@ form.giris #inputConfirmPassword {
     display: none;
 }
 
-.form-kayit.form-signin input#inputPassword {
+form.kayit.form-signin input#inputPassword {
     margin-bottom: 1px;
     border-radius: 0;
 
