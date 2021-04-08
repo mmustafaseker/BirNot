@@ -97,7 +97,7 @@
                     url: apiUrl + "Token",
                     data: { grant_type: "password", username: email, password: password },
                     success: function (data) {
-                        var rememberMe = $("inputRememberMe").prop("checked");
+                        var rememberMe = $("#inputRememberMe").prop("checked");
                         var storage = rememberMe ? localStorage : sessionStorage;
                         girisVerileriniTemizle();
                         storage["login"] = JSON.stringify(data);
